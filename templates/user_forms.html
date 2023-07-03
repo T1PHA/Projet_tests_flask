@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mes formulaires</title>
+</head>
+<body>
+    <h1>Mes formulaires</h1>
+    <ul>
+        {% for form in forms %}
+            <li>{{ form.title }}</li>
+        {% endfor %}
+    </ul>
+    <p><a href="/profile">Retour</a></p>
+</body>
+</html>

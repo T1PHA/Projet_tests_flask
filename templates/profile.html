@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profil</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Profil</h1>
+    <p>Bienvenue, {{ user.username }}!</p>
+    <p><a href="/create">Créer un formulaire</a></p>
+    <p><a href="/forms">Voir mes formulaires</a></p>
+    <p><a href="/logout">Se déconnecter</a></p>
+    <form action="/delete" method="post" onsubmit="return confirm('Voulez-vous vraiment supprimer votre compte?');">
+        <input type="submit" value="Supprimer mon compte">
+    </form>
+</body>
+</html>
